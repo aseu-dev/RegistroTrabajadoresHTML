@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+  </head>
+  <header>
+    <table bgcolor="gren" width="100%">
+      <tr>
+        <td>
+          <center>
+            <h1>Registro trabajadores</h1>
+          </center>
+        </td>
+      </tr>
+    </table>
+  </header>
+  <body>
+    <table align="center">
+      <tr>
+        <td>Rut:</td>
+        <td>
+          <center>
+            <input
+              type="text"
+              name="Rut"
+              size="20"
+              placeholder="Sin puntos ni guion"
+              required
+            />
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td>Nombre:</td>
+        <td>
+          <center>
+            <input type="text" name="Nombre" size="20" required />
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td>Apellido paterno:</td>
+        <td><input type="text" name="Apellido paterno" size="20" /></td>
+      </tr>
+      <tr>
+        <td>Apellido materno:</td>
+        <td><input type="text" name="Apellido materno" size="20" /></td>
+      </tr>
+    </table>
+    <table align="center">
+      <tr>
+        <td>Sexo:</td>
+        <td>
+          <input type="radio" name="hm" value="h" required />Masculino
+          <input type="radio" name="hm" value="m" required />Femenino
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td>Nivel de estudio:</td>
+        <td><input type="checkbox" name="n" value="n" required />No tiene</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="checkbox" name="t" value="t" />Tecnico</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="checkbox" name="u" value="u" />Universitario</td>
+      </tr>
+    </table>
+    <p>
+      Ciudad de nacimiento:
+      <select name="ciudades">
+        <option>Colombia</option>
+        <option>Argentina</option>
+        <option>Chile</option>
+      </select>
+    </p>
+    <p>
+      Curriculum:
+      <input type="file" id="curriculum" name="filename" />
+    </p>
+    <p>
+      Foto:
+      <input type="file" id="foto" name="filename" />
+    </p>
+  </body>
+  <footer>
+    <table bgcolor="gren" width="100%">
+      <tr>
+        <td>
+          <center>
+            <input type="submit" value="Registrar Trabajador" />
+          </center>
+        </td>
+      </tr>
+    </table>
+  </footer>
+</html>
